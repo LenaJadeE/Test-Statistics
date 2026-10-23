@@ -45,7 +45,22 @@ public class TestStatistics {
                 index++;
             }
         }
+        Arrays.sort(sorted);
 
+        double median;
+        if (count % 2 == 0) {
+            median = (sorted[count / 2 - 1] + sorted[count / 2]) / 2.0;
+        } else {
+            median = sorted [count / 2];
+        }
+
+        System.out.println("Test Strategies");
+        System.out.println();
+        System.out.printf("Average:    %.2f%n", average);
+        System.out.printf("High score: %d%n", high);
+        System.out.printf("Low score:  %d%n", low);
+        System.out.printf("Median:     %.2f%n", median);
+        System.out.printf("Difference between average and median:  %.2f%n", Math.abs(average - median));
 
 
 
