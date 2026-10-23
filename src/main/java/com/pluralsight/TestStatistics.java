@@ -32,8 +32,19 @@ public class TestStatistics {
             }
         }
 
+        double average = (double) sum / count;
 
-
+        // Bonus/ Extra. Median. Copy The 2D array into 1D array sort it.
+        // Then take the middle value ( Or the average of the two middle values.)
+        int[] sorted = new int[count];
+        int index = 0;
+        for (int row = 0; row < scores.length; row++) {
+            for (int col = 0; col < scores [row].length; col++) {
+                sorted[index
+                        ] = scores[row][col];
+                index++;
+            }
+        }
 
 
 
